@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="abrazo.png" type="image/x-icon">
+    <title>Abrazo virtual❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Neue', cursive;
+            background-color: #f2f2f2;
+            overflow: hidden;
+        }
+
+        .presentation-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .title {
+            font-size: 32px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .photo {
+            width: 48%; /* Tamaño ajustable según preferencias */
+            height: auto;
+            max-width: 100%;
+            max-height: 70vh; /* Altura máxima para evitar que la foto ocupe toda la pantalla */
+            border: 8px solid #fff; /* Borde blanco para dar un aspecto de marco */
+            border-radius: 10px; /* Esquinas redondeadas */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+            transition: transform 0.5s ease; /* Efecto de transición para el zoom */
+        }
+
+        .emojis {
+            position: absolute;
+            font-size: 72px; /* Tamaño aumentado */
+            color: #ff66b2; /* Color rosa */
+            animation: emojiAnimation 1.5s ease-in-out infinite alternate; /* Animación de los emojis */
+        }
+
+        .kiss {
+            top: 5%;
+            left: 5%;
+            animation: emojiFloat 2s ease-in-out infinite alternate; /* Animación de flotar */
+        }
+
+        .heart {
+            top: 20%;
+            right: 5%;
+            animation: heartAnimation 2s ease-in-out infinite alternate; /* Animación de corazón */
+        }
+
+        .smile {
+            bottom: 5%;
+            left: 10%;
+            animation: emojiRotate 2s linear infinite; /* Animación de rotar */
+        }
+
+        .stars {
+            top: 50%;
+            left: 80%;
+            animation: starsAnimation 2.5s ease-in-out infinite alternate; /* Animación de estrellas */
+        }
+
+        .cry {
+            bottom: 10%;
+            right: 15%;
+            animation: emojiFloat 1.5s ease-in-out infinite alternate; /* Animación de flotar */
+        }
+
+        .fire {
+            top: 40%;
+            left: 60%;
+            animation: emojiRotate 2s linear infinite; /* Animación de rotar */
+        }
+
+        .unicorn {
+            bottom: 20%;
+            left: 80%;
+            animation: emojiRotate 1.8s linear infinite; /* Animación de rotar */
+        }
+
+        .crown {
+            top: 5%;
+            right: 15%;
+            animation: emojiFloat 1.8s ease-in-out infinite alternate; /* Animación de flotar */
+        }
+
+        @keyframes emojiAnimation {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes emojiFloat {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes emojiRotate {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes heartAnimation {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.3);
+            }
+        }
+
+        @keyframes starsAnimation {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.3);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="presentation-container">
+        <h1 class="title">TE QUIERO EN MI VIDA ROSY</h1>
+        <img class="photo" src="Rose.jpg" alt="Foto">
+        <div class="emojis kiss">😘</div>
+        <div class="emojis heart">💞</div>
+        <div class="emojis smile">😍</div>
+        <div class="emojis stars">✨</div>
+        <div class="emojis cry">💝</div>
+        <div class="emojis crown">👑</div>
+    </div>
+    <audio autoplay>
+        <source src="MUSICA.mp3" type="audio/mp3">
+    </audio>
+</body>
+
+</html>
