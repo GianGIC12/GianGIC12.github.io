@@ -1,113 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="abrazo.png" type="image/x-icon">
-    <title>Abrazo virtual❤️</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f2f2f2;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .presentation-message {
-            text-align: center;
-            font-size: 24px;
-            font-family: 'Comic Neue', cursive;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .accept-button {
-            background-color: red;
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-family: 'Comic Neue', cursive; /* Agregado para aplicar la misma fuente */
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease, background-color 0.3s ease;
-        }
-
-        .accept-button:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            background-color: #ff80ab; /* Cambiado a un tono de rosa */
-        }
-
-        .emoji-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .emoji {
-            font-size: 24px;
-            position: absolute;
-            animation: emojiAnimation 2s linear infinite;
-        }
-
-        @keyframes emojiAnimation {
-            0% {
-                transform: translateY(0) scale(1);
-            }
-            50% {
-                transform: translateY(-20px) scale(1.5);
-            }
-            100% {
-                transform: translateY(0) scale(1);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Te gustaria salir conmigo?</title>
 </head>
-
 <body>
-    <div class="presentation-message">
-       Mi Rosy Te envío un abrazo virtual ❤️
+    <div class="container">
+        <div class="tenor-gif-embed" data-postid="2871482820979272488" data-share-method="host" data-aspect-ratio="1.28351" data-width="100%"><a href="https://tenor.com/view/mochi-pet-mochi-cat-cute-squiddy-gif-2871482820979272488">Mochi Pet GIF</a>from <a href="https://tenor.com/search/mochi-gifs">Mochi GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <h1>¿Te gustaria salir conmigo? 🥰</h1>
+        <p>Eres la persona mas especial del mundo</p>
+        <div class="btn">
+            <a href="si.html">SI</a>
+            <a href="no1.html">NO</a>
+        </div>
     </div>
-    <button class="accept-button" onclick="aceptarAbrazo()">Aceptar Abrazo</button>
-
-    <div class="emoji-background">
-        <!-- Agrega emojis al fondo -->
-    </div>
-
-    <script>
-        function aceptarAbrazo() {
-            //alert("¡Abrazo aceptado! ❤️");
-            // Agregar emojis al fondo al hacer clic
-            const emojiBackground = document.querySelector('.emoji-background');
-
-            for (let i = 0; i < 50; i++) {
-                const emoji = document.createElement('div');
-                emoji.className = 'emoji';
-                emoji.innerHTML = '❤️';
-                emoji.style.left = Math.random() * 100 + 'vw';
-                emoji.style.top = Math.random() * 100 + 'vh';
-                emojiBackground.appendChild(emoji);
-                setTimeout(() => {
-                    emoji.remove();
-                }, 5000); // Elimina el emoji después de 2 segundos
-                window.location.href = "ABRAZO.html";
-            }
-        }
-    </script>
 </body>
-
 </html>
